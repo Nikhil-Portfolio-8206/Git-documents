@@ -90,6 +90,19 @@ Create a PR(pull request-tell others about the changes)(mostly prefered when wor
  ------------------------------------------------
  Resolving Merge conflicts:-
  Git is unable to automatically resolve differences in code between two commits.
+ -------------------------------
+ Undoing changes:-
+ three case:
+ 1. Staged changes(we have applied in (git add ))
+     git reset <-file name ->(to reset single file )
+     git reset (to reset all files)
+
+2. commited changes(for one commit or latest head)
+     git reset HEAD~1
+
+3. Commited changes (for many commits i.e want to jump to particular hash)
+     git reset <-commit hash->
+     git reset --hard <-commit hash->
 
 
 
