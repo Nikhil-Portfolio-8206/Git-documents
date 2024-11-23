@@ -79,13 +79,18 @@ Method 1-using local files
 git diff <-branch name-> (to compare commits, branches, files & more and make sure you are not in the same branch for which you want to see the differences)
 git merge <-branch name-> (to merge 2 branches)
 
-Method 2-in git
+Method 2-using githubd
 Create a PR(pull request-tell others about the changes)(mostly prefered when working with team)
  
  if we are using pull request to merge the branches then it will not directly reflect in local files, so to do this,use pull command
  --------------------------------
  Pull command:-
  git pull origin main  ->fetch remote repo and update in local repo to match content
+
+ ------------------------------------------------
+ Resolving Merge conflicts:-
+ Git is unable to automatically resolve differences in code between two commits.
+
 
 
 
