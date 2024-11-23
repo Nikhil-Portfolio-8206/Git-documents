@@ -103,6 +103,11 @@ Create a PR(pull request-tell others about the changes)(mostly prefered when wor
 3. Commited changes (for many commits i.e want to jump to particular hash)
      git reset <-commit hash->
      git reset --hard <-commit hash->
+-------------------------------
+Fork - a copy of original open source or team project and use in personal account
+------------------------
+
+
 
 
 
