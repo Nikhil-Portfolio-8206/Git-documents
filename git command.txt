@@ -75,7 +75,17 @@ git branch -d <-branch name-> (to delete branch, if you are at the branch on whi
 -------------------------
 Merging branches to the main 
 
+Method 1-using local files
+git diff <-branch name-> (to compare commits, branches, files & more)
+git merge <-branch name-> (to merge 2 branches)
 
+Method 2-in git
+Create a PR(pull request-tell others about the changes)(mostly prefered when working with team)
+ 
+ if we are using pull request to merge the branches then it will not directly reflect in local files, so to do this,use pull command
+ --------------------------------
+ Pull command:-
+ git pull origin main  ->fetch remote repo and update in local repo to match content
 
 
 
