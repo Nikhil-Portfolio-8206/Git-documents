@@ -51,9 +51,10 @@ init command:-
  
 init- used to create a new git repo
 
-git init
+git init( inital git in pwd)
+Remove-Item -Recurse -Force .git(undo git init)
 
-git remote add origin <-link-> (To change remote repo command->  git remote set-url origin <-link->
+git remote add origin <-link-> (To change remote repo command->  git remote set-url origin <-link->)
 
 git remote -v (to verify remote)
 
