@@ -1,0 +1,13 @@
+Step-1  while installing the bootstrap first time, you may encountered with error like 'npm is not recognized'. To fix this issue install node.js so this problem will resolved.
+
+Step-2 After installing node.js, if you again use the command 'npm init -y' show script is disabled on this system.
+
+Step-3 Now open the powershell and run as administrator and use command 'Get-ExecutionPolicy' if it is restricted then use command 'Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned' to make permanent policy to run script for current user(prefer if you are developer)
+
+Step-4 To check whether is it working, open the terminal VS code using command 'npm -v', if it return its version then it is working fine
+
+Step-5 Now to install bootstrap using npm use command 'npm init -y' , this will create a package.json file in pwd
+
+Step-6 Now to install bootstrap use command 'npm install bootstrap' 
+
+Installation is successful
