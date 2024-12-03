@@ -3,6 +3,7 @@
 -> Use console option for single script run and use snippet option for multiple script at a time.
 
 -> Ctrl + L or console.clear();  To clear console option in chrome
+-> Long press refresh to remove all chache and hard reload.
 
 ----Alert function----
 Alert("hello world");
@@ -25,3 +26,34 @@ Example:-
 var para1= prompt("Write your tweet:");
 var para2= para1.length;
 alert("you have written " +para2+ " and you have left " + (100-para2)+ " character remaining.");
+
+-------------Slicing and extracting part of string-----------------
+var name ="Nikhil";
+name.slice(0,1);
+
+output - N
+
+var name ="Nikhil";
+name.slice(5,6);
+
+output - l
+
+var name ="Nikhil";
+name.slice(0,3);
+
+output- Nik
+
+var name ="Nikhil";
+name.slice(1,5);
+
+output- ikhi
+
+---------e.g----
+var para1= prompt("Write your tweet:");
+var para2= para1.slice(0,140);
+alert(para2);
+
+OR signle line
+alert(prompt("Write your tweet:").slice(0,140));
+
+
