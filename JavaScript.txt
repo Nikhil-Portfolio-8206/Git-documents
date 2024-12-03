@@ -1,0 +1,27 @@
+-> You can write the javascript simple functions using chrome developer tool using shortcut (F12 or Ctrl + shift + i) on windows.
+
+-> Use console option for single script run and use snippet option for multiple script at a time.
+
+-> Ctrl + L or console.clear();  To clear console option in chrome
+
+----Alert function----
+Alert("hello world");
+
+----------Data type--------
+String, Number, Boolean
+
+----------Variable name------------
+Allowed only number, character, $, _(underscore)  ->while defining a Variable
+
+----------String Concatenation-------
+"Hello" + "_" + "World" =>output  Hello_World
+
+-----------String length-------
+Return number of character used in String
+var name="Hello"
+name.length = 5 (number of character including space)
+
+Example:-
+var para1= prompt("Write your tweet:");
+var para2= para1.length;
+alert("you have written " +para2+ " and you have left " + (100-para2)+ " character remaining.");
