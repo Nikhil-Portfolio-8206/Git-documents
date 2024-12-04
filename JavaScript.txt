@@ -12,7 +12,7 @@ Alert("hello world");
 String, Number, Boolean
 
 ----------Variable name------------
-Allowed only number, character, $, _(underscore)  ->while defining a Variable
+Allowed only number, character, $, _(underscore) , first letter must not be a digit   ->while defining a Variable
 
 ----------String Concatenation-------
 "Hello" + "_" + "World" =>output  Hello_World
@@ -55,5 +55,52 @@ alert(para2);
 
 OR signle line
 alert(prompt("Write your tweet:").slice(0,140));
+
+----------------- toUpperCase and toLowerCase --------------
+var name="Nikhil";
+name.toUpperCase();
+name.toLowerCase();
+
+e.g-
+var name=(prompt("What is your name:"));
+var count=name.length;
+var name1=name.slice(0,1);
+var name2=name.slice(1,count);
+alert("Your name is " + name1.toUpperCase() + name2.toLowerCase());
+
+------------------------Airthmatic operation ----------
++, -, X, / , %(modulo-give remainder)
+
+---------------------Increment and Decrement operator----------
+var x=2;
+x=x+1; or x++; output=3
+-----
+var x=3
+x=x+2; or x +=2; output=5
+
+similarly 
++=
+-=
+*=
+/= 
+%=
+------------------Functions---------
+Series of instruction in a block 
+
+Creating a funtion-
+function fnname(){
+
+}
+
+calling a function-
+fnname();
+
+------------------
+
+
+
+
+
+
 
 
