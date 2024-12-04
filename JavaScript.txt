@@ -84,18 +84,28 @@ similarly
 *=
 /= 
 %=
-------------------Functions---------
+------------------Functions without input---------
 Series of instruction in a block 
 
 Creating a funtion-
-function fnname(){
+function fn_name(){
 
 }
 
 calling a function-
-fnname();
+fn_name();
 
-------------------
+------------------Calling a function with input-------
+fn_name(input value for fn);
+
+e.g-
+function getMilk(money) {   
+ console.log("Buy " + money/15 + " number of bottles");
+}
+getMilk(60);
+
+-------------
+
 
 
 
