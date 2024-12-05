@@ -64,6 +64,20 @@ git branch -M main (to rename branch)
 
 git push origin main(if your frequently using git push origin main so instead you can use command-> "git push -u origin main" , now from next time we can use only "git push")
 
+
+
+-----------To upload a fresh folder to git repository-----
+
+1. First create a repository(xyz name) without initializing readme.md 
+2. Now got local folder where the project is being stored, use command -> "git init" -to initalized git repo
+3. Now use "git remote add origin <link of new created repo>" 
+4. 'git branch -M main' -to rename the master branch name to main
+5. 'git add .'
+6. ' git commit -m "name of project or changes made write here"  '
+7. 'git push -u origin main' -project will uploaded successfully
+8. Refresh the newly created repo page.
+
+
 ---------------------------------------------
 Branch commands:-
 
