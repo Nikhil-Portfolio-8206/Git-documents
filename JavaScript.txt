@@ -71,6 +71,8 @@ alert("Your name is " + name1.toUpperCase() + name2.toLowerCase());
 ------------------------Airthmatic operation ----------
 +, -, X, / , %(modulo-give remainder)
 
+Math.floor(); -> To get value without decimal
+
 ---------------------Increment and Decrement operator----------
 var x=2;
 x=x+1; or x++; output=3
@@ -104,9 +106,24 @@ function getMilk(money) {
 }
 getMilk(60);
 
--------------
+-------------Calling a function with return value-------
+function getMilk(money) {   
+ console.log("Buy " + money/15 + " number of bottles");
+ return money%15;
+}
+ var Remainder = getMilk(62);
 
-
+----------------------- Example----------
+function lifeInWeeks(age) {   
+  
+   let age_rem=90-age;
+   let days=age_rem*365;
+  let weeks=age_rem*52;
+  let months=age_rem*12;
+  console.log("You have "+ days + " days, " + weeks + " weeks, and " +months+ " months left.");
+}
+lifeInWeeks(56);
+----------------------BMI calcualtor-------------
 
 
 
