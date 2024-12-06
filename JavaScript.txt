@@ -127,7 +127,100 @@ function bmiCalculator(weight,height){
     let bmi_roundoff=Math.floor(bmi_cal);
     return bmi_roundoff;
 }
+--------conditional--------
+function bmiCalculator (weight, height) {
+    let bmi_cal=(weight)/(height*height);
+    let bmi=Math.floor(bmi_cal);
+    if(bmi<18.5){
+        return "Your BMI is " +bmi+", so you are underweight.";
+    }
+    else if(bmi>=18.5 && bmi<=24.9){
+        return "Your BMI is "+bmi+", so you have a normal weight.";
+    }
+    else{
+        return "Your BMI is "+bmi+", so you are overweight.";
+    }
+}
+---------- Random number generator----------
+var n = Math.random();   this will generate random number b/w 0-0.9999999999999999 (never become 1)
 
+e.g-
+prompt("Your name:");
+prompt("Your partner name:");
+var n=Math.random();
+n=n*100+1;
+alert("Your score is " + Math.floor(n)+ "%");
+
+------------Comparators---------
+
+=== equal
+!== not equal
+>   greater than
+<   lesser than
+>=  greater or equal
+<=  lesser or equal
+
+key difference b/w === and == , == check only value but === not only check value but also data type.
+
+------------- combining comparators--------
+ &&  - AND
+ ||  - OR
+ !   - NOT
+---------------To check Leap year-----------
+function isLeapyear(year) {
+    let check1=year%4;
+    let check2=year%100;
+    let check3=year%400;
+    if(check1===0 && check2!==0 || check3===0){
+        return "Leap year";
+    }
+    else{
+        return "Not a leap year";
+    }
+}
+isLeapyear(2016);
+---------------Array-- and-- includes function------------
+var array=["Nikhil","sumit","pradeep","Shubh","Shaurya"];
+var checklist=prompt();
+;
+if(array.includes(checklist)){
+    console.log("allowed");
+}
+else{
+    console.log("Not allowed");
+}
+
+---Push and pop function----
+array.push("jay"); -add one element at the last of an array
+array.pop(); -Remove last element of an array
+
+-------------------- Fizz and Buzz problem----------------
+var output=[];
+var count=1;
+
+function fizzBuzz(){    
+    if(count%3===0){
+        output.push("Fizz");
+        console.log(output); 
+    }
+     else if(count%5===0){
+         output.push("Buzz");
+         console.log(output);   
+    }
+    else if(count%3===0 && count%5===0){
+        output.push("FizzBuzz");
+        console.log(output);
+    }
+    else{
+        output.push(count);
+        console.log(output);
+    }
+    count++;
+}
+
+fizzBuzz(); - as many times we run function it will push one value to it
+
+---------------------
 
 
 
