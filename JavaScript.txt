@@ -142,7 +142,7 @@ function bmiCalculator (weight, height) {
     }
 }
 ---------- Random number generator----------
-var n = Math.random();   this will generate random number b/w 0-0.9999999999999999 (never become 1)
+var n = Math.random();   this will generate random number b/w 0-0.9999999999999999 (including 0 and excluding 1)
 
 e.g-
 prompt("Your name:");
@@ -179,10 +179,10 @@ function isLeapyear(year) {
     }
 }
 isLeapyear(2016);
----------------Array-- and-- includes function------------
+---------------Array--array length, and includes function------------
 var array=["Nikhil","sumit","pradeep","Shubh","Shaurya"];
 var checklist=prompt();
-;
+var count=array.length;
 if(array.includes(checklist)){
     console.log("allowed");
 }
@@ -220,8 +220,18 @@ function fizzBuzz(){
 
 fizzBuzz(); - as many times we run function it will push one value to it
 
----------------------
+--------------------- Pick a person randomly from array and have to pay bill ----------------------
 
+var names=["Nikhil","sumit","pradeep","Shubh","Shaurya","Angela", "Ben", "Jenny", "Michael", "Chloe"];
+
+function whosPaying(names) {
+    let count=names.length;
+    let Randonperson=Math.random()*count;
+    let Paybill=Math.floor(Randonperson);
+return names[Paybill]+ " is going to buy lunch today!";
+}
+whosPaying(names);
+-------------------
 
 
 
