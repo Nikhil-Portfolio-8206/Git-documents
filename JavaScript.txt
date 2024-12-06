@@ -1,9 +1,9 @@
--> You can write the javascript simple functions using chrome developer tool using shortcut (F12 or Ctrl + shift + i) on windows.
+-> You can write the JavaScript simple functions using chrome developer tool using shortcut (F12 or Ctrl + shift + i) on windows.
 
 -> Use console option for single script run and use snippet option for multiple script at a time.
 
 -> Ctrl + L or console.clear();  To clear console option in chrome
--> Long press refresh to remove all chache and hard reload.
+-> Long press refresh to remove all cache and hard reload.
 
 ----Alert function----
 Alert("hello world");
@@ -71,8 +71,6 @@ alert("Your name is " + name1.toUpperCase() + name2.toLowerCase());
 ------------------------Airthmatic operation ----------
 +, -, X, / , %(modulo-give remainder)
 
-Math.floor(); -> To get value without decimal
-
 ---------------------Increment and Decrement operator----------
 var x=2;
 x=x+1; or x++; output=3
@@ -86,7 +84,7 @@ similarly
 *=
 /= 
 %=
-------------------Functions without input---------
+------------------Functions---------
 Series of instruction in a block 
 
 Creating a funtion-
@@ -124,7 +122,11 @@ function lifeInWeeks(age) {
 }
 lifeInWeeks(56);
 ----------------------BMI calcualtor-------------
-
+function bmiCalculator(weight,height){
+     let bmi_cal=(weight)/(height*height); or let bmi_cal=(weight)/Math.pow((height/100),2);
+    let bmi_roundoff=Math.floor(bmi_cal);
+    return bmi_roundoff;
+}
 
 
 
