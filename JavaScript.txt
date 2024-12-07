@@ -295,5 +295,12 @@ function fibonacciGenerator(n) {
     }
 }
 fibonacciGenerator(4);
---------------------------
+-------------------------- JavaScript  ------------
+
+There are 3 way to apply JavaScript:
+1. Inline JavaScript:- Directly within HTML elements:  e.g - <body onload=onclick="alert('Hello, World!')">
+
+2. Internal JavaScript:- Within <script> </script> tags: Place the script just before the body closing element.
+
+3. External JavaScript:- In a separate .js file:- <script src="script.js"></script> Place the script just before the body closing element.
 
