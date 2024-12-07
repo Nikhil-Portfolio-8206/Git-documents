@@ -197,28 +197,27 @@ array.pop(); -Remove last element of an array
 -------------------- Fizz and Buzz problem----------------
 var output=[];
 var count=1;
-
-function fizzBuzz(){    
-    if(count%3===0){
+function fizzBuzz(){
+    while(count<=100){
+        if(count%3===0){
         output.push("Fizz");
-        console.log(output); 
     }
      else if(count%5===0){
          output.push("Buzz");
-         console.log(output);   
     }
     else if(count%3===0 && count%5===0){
         output.push("FizzBuzz");
-        console.log(output);
     }
     else{
         output.push(count);
-        console.log(output);
     }
     count++;
+    }    
+    console.log(output);
+    
 }
 
-fizzBuzz(); - as many times we run function it will push one value to it
+fizzBuzz();
 
 --------------------- Pick a person randomly from array and have to pay bill ----------------------
 
@@ -231,8 +230,70 @@ function whosPaying(names) {
 return names[Paybill]+ " is going to buy lunch today!";
 }
 whosPaying(names);
--------------------
+-------------------while loop - generally used to check state------------
 
+var output=[];
+var count=1;
+function fizzBuzz(){
+    while(count<=100){
+        if(count%3===0){
+        output.push("Fizz");
+    }
+     else if(count%5===0){
+         output.push("Buzz");
+    }
+    else if(count%3===0 && count%5===0){
+        output.push("FizzBuzz");
+    }
+    else{
+        output.push(count);
+    }
+    count++;
+    }    
+    console.log(output);
+    
+}
 
+fizzBuzz();
+------------------------- 99 Bottles of Beer lyrics using while loop------------
+\n - To break the line and print in next line in JavaScript
 
+var count=99;
+while (count>1) {
+    console.log(count+ " bottles of beer on the wall, " +count+ " bottles of beer.\nTake one down and pass it around, "+(count-1)+ " bottles of beer on the wall."); 
+    count--;
+    if(count===1){
+        console.log("1 bottle of beer on the wall, 1 bottle of beer.\nTake one down and pass it around, no more bottles of beer on the wall."); 
+        count--;
+    }
+}
+if(count===0){
+    console.log("No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.");
+} 
+
+-------------------- For loop - generally used for iteration -----------
+for(var i=1;i<100;i++){
+    
+}
+
+--------------------Fibonacci series --------------
+function fibonacciGenerator(n) {
+    var Fibonacci_series=[];
+    if(n===1){
+        return Fibonacci_series=[0];
+    }
+    else if(n===2){
+        return Fibonacci_series=[0,1];
+    }
+    else{
+       Fibonacci_series=[0,1];
+    for(let i=0;i<n-2;i++){
+    let sum=Fibonacci_series[i]+Fibonacci_series[i+1];
+    Fibonacci_series.push(sum);
+    }
+         return Fibonacci_series;
+    }
+}
+fibonacciGenerator(4);
+--------------------------
 
