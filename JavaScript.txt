@@ -298,9 +298,27 @@ fibonacciGenerator(4);
 -------------------------- JavaScript  ------------
 
 There are 3 way to apply JavaScript:
-1. Inline JavaScript:- Directly within HTML elements:  e.g - <body onload=onclick="alert('Hello, World!')">
+1. Inline JavaScript:- Directly within HTML elements:  e.g - <body onload=onclick="alert('Hello, World!')">  remember this->  " ' ' "
 
 2. Internal JavaScript:- Within <script> </script> tags: Place the script just before the body closing element.
 
 3. External JavaScript:- In a separate .js file:- <script src="script.js"></script> Place the script just before the body closing element.
+
+---------------------- DOM(Document object model)--------------------------
+Structure of HTML document, Browser converts the html into DOM like a tree structure so that we can select the object(html element) and manipulate it.
+
+Function - general purpose(define anywhere), reusable, flexible(take parameters,return values)
+
+DOM Method- object specific,built-in(provided by browser's javascript engine),manupulate content of HTML
+
+The object inside the DOM have:- 
+1. Properties -describe the object
+   e.g-Get property- object.property;
+
+2. Methods(associated with object in DOM)- what the object can do
+   e.g- Set property- object.Method()=0;
+   e.g- Call Method-  object.Method(); - do something
+
+----------------
+
 
