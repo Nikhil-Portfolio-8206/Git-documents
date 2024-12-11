@@ -35,7 +35,7 @@ unmodified- unchanged
 Add & commit
 
 add command -adds new or changed files in your working directory to the git staging area.
-  git add <-file name-> and to add all files ---- git add .
+  git add <-file name-> and to add all files ---- "git add ." (To revert use- "git restore --staged .")
 
 commit - it is the record of change
   git commit -m "some message"
