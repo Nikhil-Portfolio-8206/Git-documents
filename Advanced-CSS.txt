@@ -1,0 +1,42 @@
+----------Display -------
+block
+inline 
+inline-block
+none
+grid
+
+-----------Position property:-
+Static
+Relative
+Absolute
+fixed
+----------- Float and clear ---------
+Float: left or right - used for image to wrap text around it
+
+clear:left or right or both - used to clear the text for specific paragraph just below the image
+
+---------- what method to achieve Responsiveness -----
+1. Media queries 
+2. CSS grid -2D layout
+3. CSS Flexbox - 1D layout horizontal or vertical
+4. External frameworks like bootstrap
+
+1. 
+@media(break-point){
+    After this break-point 
+}
+max-width 700px - less than 700px and upto  700px this media query work after overriding default css
+min-width 700px - more than 700px this media query work 
+combine min and max media query
+
+2. .grid-container{
+    Display:grid; - based on this used another properties as per requirement for layout
+
+}
+
+3. .flex-container{
+    Display:flex ; - based on this used another properties as per requirement for layout
+
+}
+
+4. Bootstrap work - as 12 division of screen in width 
