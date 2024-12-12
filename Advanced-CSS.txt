@@ -4,6 +4,7 @@ inline
 inline-block
 none
 grid
+flex
 
 -----------Position property:-
 Static
@@ -28,6 +29,7 @@ clear:left or right or both - used to clear the text for specific paragraph just
 max-width 700px - less than 700px and upto  700px this media query work after overriding default css
 min-width 700px - more than 700px this media query work 
 combine min and max media query
+media screen orientation: landscape(not use for normal media)
 
 2. .grid-container{
     Display:grid; - based on this used another properties as per requirement for layout
@@ -39,4 +41,7 @@ combine min and max media query
 
 }
 
-4. Bootstrap work - as 12 division of screen in width 
+4. Bootstrap work - as 12 division of screen in width
+
+
+
