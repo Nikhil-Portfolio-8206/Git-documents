@@ -43,5 +43,16 @@ media screen orientation: landscape(not use for normal media)
 
 4. Bootstrap work - as 12 division of screen in width
 
+-----------------------------  CSS Flexbox ----------------
+Apply display flex to the main container
+Flex-direction automatically row
+justify-content property works for horizontal alignment
+align-item property works for vertical alignment
+Assign flex-wrap to main container if the container of space then it become wrap
+for item inside main container set flex shrink, grow so that it will be Responsive
+
+------------------------------
+
+
 
 
