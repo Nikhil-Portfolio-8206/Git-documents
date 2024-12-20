@@ -1,0 +1,9 @@
+ls        : To list all files
+ls -a     : To list all files including hidden
+cd        : Change directory
+cd ..     : One step back in directory
+cd __/__/ : To directly change the path to destination folder
+
+Ctrl+A    : To jump at beginning of line
+Ctrl+E    : To jump at the End of line
+Ctrl+U    : Clear the single line
