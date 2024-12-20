@@ -83,7 +83,7 @@ Branch commands:-
 
 git branch (to check branch)
 git branch -M main (to change branch name)
-git checkout <- branch name-> (to navigate to branches available)
+git checkout <- branch name-> (to navigate to branches available or revert back to last code)
 git checkout -b <-new branch name-> (to create new branch)
 git branch -d <-branch name-> (to delete branch, if you are at the branch on which you are currently working so we can not delete that branch, to do so we have first switch the branch then delete any of the branches that is available)
 
