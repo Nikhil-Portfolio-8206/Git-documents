@@ -1,0 +1,14 @@
+To setup react project on Git hub:
+1. Push the project as normally do for other project
+2. npm install gh-pages
+3. Add Deployment Scripts given below to package.json after "dependencies": 
+    "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",    // "build": "cross-env REACT_APP_OPEN_WEATHER_API_KEY=$REACT_APP_OPEN_WEATHER_API_KEY react-scripts build"
+  "deploy": "npm run build && gh-pages -d build"  // "deploy": "cross-env REACT_APP_OPEN_WEATHER_API_KEY=$REACT_APP_OPEN_WEATHER_API_KEY npm run build && gh-pages -d build"
+},
+4. Add to package.json before dependencies :
+    "homepage": "https://Nikhil-Portfolio-8206.github.io/<repo_name>",
+5. Deploy to GitHub Pages:
+    npm run deploy  
+6. In git select  gh-pages branch as the source.
